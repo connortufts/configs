@@ -15,7 +15,7 @@ alias diff='diff --strip-trailing-cr'
 
 viewcsv() {
     if [[ $# -ge 2 ]] ; then
-        column -s ${1} -t ${2}  | less -S
+        column -s $1 -t $2 | less -S
     else
         echo 'need separator and file'
     fi
@@ -38,3 +38,20 @@ unset -f rgb
 PS1="${COLOR_VIOLET}[\u@\h \W]\$${COLOR_RESET} "
 
 export EDITOR=vim
+
+function adog {
+    #local flags='--decorate --oneline --graph --abbrev=4 --date=human'
+    local flags=(
+        --graph
+        --decorate
+        --abbrev=4
+        '--format=format:%C(auto)%h %C(auto)%d %C(bold blue)%an%C(reset) %s %C(dim white)%ad%C(reset)'
+        --date=human
+    )
+    if [[ $# -eq 0 ]] ; then
+        git log "${flags[@]}" --all
+    else
+        git log "${flags[@]}" $@
+    fi
+}
+c=~/tufts/research/projects/cpinn_remake/

@@ -1,3 +1,5 @@
+let mapleader="\<Space>"
+
 " for truecolor xterm
 set termguicolors
 filetype plugin on
@@ -10,7 +12,7 @@ set number
 set hlsearch
 set incsearch
 " to clear current search
-nnoremap <leader>h :let @/=""<CR>
+nnoremap <leader>/ :let @/=""<CR>
 
 " auto indent from previous line
 set ai
@@ -28,6 +30,12 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set softtabstop=4
+
+" easy pasting from yank register
+nnoremap <leader>p "0p
+vnoremap <leader>p "0p
+
+nnoremap <leader>r :set relativenumber!<CR>
 
 colorscheme purple
 

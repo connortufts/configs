@@ -40,7 +40,7 @@ hi Special		guifg=#FFFFFF guibg=NONE cterm=bold
 hi MatchParen		guifg=#000000 guibg=#FFFFFF cterm=bold
 
 hi Search		guifg=#000000 guibg=#CC75FF cterm=bold
-hi IncSearch		guifg=#000000 guibg=#CC75FF cterm=bold
+hi IncSearch		guifg=#000000 guibg=#0000FF cterm=bold
 hi Visual		guifg=#000000 guibg=#CC75FF cterm=bold
 
 hi Error		guifg=#FF0000 guibg=#888888 cterm=italic,bold

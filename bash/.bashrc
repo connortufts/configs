@@ -9,9 +9,12 @@ alias ls='ls --color=auto -Fh'
 alias ll='ls -l'
 alias la='ls -A'
 alias lla='ls -lA'
+alias lls='lla --sort=size'
 alias notes='xournalpp'
 alias grep='grep --color=auto'
 alias diff='diff --strip-trailing-cr'
+alias v='vim'
+alias g='git'
 
 viewcsv() {
     if [[ $# -ge 2 ]] ; then
@@ -54,4 +57,3 @@ function adog {
         git log "${flags[@]}" $@
     fi
 }
-c=~/tufts/research/projects/cpinn_remake/

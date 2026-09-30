@@ -6,8 +6,8 @@ syntax reset
 let g:colors_name = "purple"
 
 " line and column highlighting
-hi CursorLine		cterm=NONE guifg=NONE guibg=NONE
-hi CursorColumn		guifg=#000000 guibg=#FFFFFF
+hi CursorLine       guifg=NONE guibg=NONE cterm=NONE
+hi CursorColumn     guifg=NONE guibg=NONE cterm=NONE
 
 " line numbers on side
 hi LineNr		    guifg=#FFFFFF guibg=NONE
@@ -36,6 +36,8 @@ hi PmenuSel         guifg=#FFFFFF guibg=#571380
 hi PmenuSBar        guibg=#AE27FE
 hi PmenuThumb       guibg=#FFFFFF
 
+hi Directory        guifg=#CC75FF
+
 hi Question         guifg=#6060FF cterm=bold
 hi MoreMsg          guifg=#6060FF cterm=bold
 
@@ -53,7 +55,6 @@ hi FoldColumn       guifg=#6060FF guibg=NONE cterm=bold
 hi Normal		    guifg=#FFFFFF guibg=NONE
 hi Comment		    guifg=#6060FF guibg=NONE cterm=italic,bold
 hi Constant		    guifg=#FFFFFF guibg=NONE cterm=bold
-hi Identifier		guifg=#FFFFFF guibg=NONE
 hi Statement		guifg=#CC75FF guibg=NONE
 hi PreProc		    guifg=#CC75FF guibg=NONE cterm=bold,italic
 hi Type			    guifg=#CC75FF guibg=NONE cterm=bold

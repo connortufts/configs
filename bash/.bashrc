@@ -10,10 +10,12 @@ alias ll='ls -l'
 alias la='ls -A'
 alias lla='ls -lA'
 alias lls='lla --sort=size'
+alias l='ll'
 alias notes='xournalpp'
 alias grep='grep --color=auto'
 alias diff='diff --strip-trailing-cr'
 alias v='vim'
+alias vs='vim -S ~/vs/last'
 alias g='git'
 
 viewcsv() {
@@ -33,7 +35,7 @@ HISTFILESIZE=10000
 rgb() { printf "\[\033[38;2;%s;%s;%sm\]" $((0x${1})) $((0x${2})) $((0x${3})); }
 
 # custom cli colors
-COLOR_VIOLET=$(rgb ae 27 fe)
+COLOR_VIOLET=$(rgb a2 77 ff)
 COLOR_RESET="\[\033[0m\]"
 
 unset -f rgb

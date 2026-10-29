@@ -126,8 +126,8 @@ nnoremap <leader>D :diffoff<CR>
 nnoremap <leader>o o<ESC>
 nnoremap <leader>O O<ESC>
 nmap <leader>= <leader>v=
-nnoremap <C-]> g<C-]>
-nnoremap <C-[> <C-t>
+nnoremap ]] g<C-]>
+nnoremap [[ <C-t>
 nnoremap <C-w>] <C-w>g<C-]>
 nnoremap <C-w>} <C-w>g}
 nnoremap <C-w>n :vnew<CR>
